@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExample", "InheritanceExample\InheritanceExample.csproj", "{0ED2CC1A-3603-44F0-9C57-9FC362F28299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExample.Client", "InheritanceExample.Client\InheritanceExample.Client.csproj", "{0D14DFE0-445B-4A92-9E55-A848CE0D6402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExample.ClientGenerator", "InheritanceExample.ClientGenerator\InheritanceExample.ClientGenerator.csproj", "{ECCBC63C-553D-4D1C-8D58-42451D45DC0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ED2CC1A-3603-44F0-9C57-9FC362F28299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED2CC1A-3603-44F0-9C57-9FC362F28299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED2CC1A-3603-44F0-9C57-9FC362F28299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED2CC1A-3603-44F0-9C57-9FC362F28299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D14DFE0-445B-4A92-9E55-A848CE0D6402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D14DFE0-445B-4A92-9E55-A848CE0D6402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D14DFE0-445B-4A92-9E55-A848CE0D6402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D14DFE0-445B-4A92-9E55-A848CE0D6402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECCBC63C-553D-4D1C-8D58-42451D45DC0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCBC63C-553D-4D1C-8D58-42451D45DC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCBC63C-553D-4D1C-8D58-42451D45DC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCBC63C-553D-4D1C-8D58-42451D45DC0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
