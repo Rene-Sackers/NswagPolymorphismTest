@@ -10,7 +10,8 @@ namespace InheritanceExample.Controllers;
 [Route("[controller]")]
 public class AnimalsController : ControllerBase
 {
-	[HttpGet(Name = "GetAnimals")]
+	[HttpGet]
+	[Route("/Get")]
 	public IEnumerable<Animal> Get()
 	{
 		return [
@@ -19,9 +20,11 @@ public class AnimalsController : ControllerBase
 		];
 	}
 
-	[HttpPost(Name = "PostAnimals")]
-	public void Post(IEnumerable<Animal> animals)
+	[HttpPost]
+	[Route("/Post")]
+	public void Post(Animal animal)
 	{
-		Console.WriteLine(JsonConvert.SerializeObject(animals, Formatting.Indented));
+		Console.WriteLine($"Incoming type: {animal.GetType().FullName}");
+		Console.WriteLine(JsonConvert.SerializeObject(animal, Formatting.Indented));
 	}
 }

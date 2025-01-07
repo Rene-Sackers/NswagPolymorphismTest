@@ -5,12 +5,11 @@
     "version": "1.0"
   },
   "paths": {
-    "/Animals": {
+    "/Get": {
       "get": {
         "tags": [
           "Animals"
         ],
-        "operationId": "GetAnimals",
         "responses": {
           "200": {
             "description": "OK",
@@ -63,12 +62,13 @@
             }
           }
         }
-      },
+      }
+    },
+    "/Post": {
       "post": {
         "tags": [
           "Animals"
         ],
-        "operationId": "PostAnimals",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -129,6 +129,70 @@
                     }
                   ]
                 }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Test": {
+      "post": {
+        "tags": [
+          "Animals"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/Dog"
+                  },
+                  {
+                    "$ref": "#/components/schemas/Spider"
+                  }
+                ]
+              }
+            },
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/Dog"
+                  },
+                  {
+                    "$ref": "#/components/schemas/Spider"
+                  }
+                ]
+              }
+            },
+            "text/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/Dog"
+                  },
+                  {
+                    "$ref": "#/components/schemas/Spider"
+                  }
+                ]
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/Dog"
+                  },
+                  {
+                    "$ref": "#/components/schemas/Spider"
+                  }
+                ]
               }
             }
           }

@@ -3,7 +3,6 @@ using System.CommandLine;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
-using NJsonSchema.CodeGeneration.CSharp;
 using NSwag;
 using NSwag.CodeGeneration.CSharp;
 
