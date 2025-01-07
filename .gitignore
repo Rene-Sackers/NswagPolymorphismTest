@@ -400,6 +400,4 @@ FodyWeavers.xsd
 *.sln.iml
 
 .idea/
-swagger.json
-Generated/
 appsettings.*.json

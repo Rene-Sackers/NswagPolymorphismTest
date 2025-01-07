@@ -41,8 +41,7 @@ static async Task RunAsync(FileInfo swaggerFile, FileInfo output)
 	{
 		CSharpGeneratorSettings =
 		{
-			Namespace = clientProjectNamespace,
-			// JsonPolymorphicSerializationStyle = CSharpJsonPolymorphicSerializationStyle.NJsonSchema
+			Namespace = clientProjectNamespace
 		}
 	};
 

@@ -8,6 +8,7 @@ builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
+	options.UseOneOfForPolymorphism();
 	options.UseAllOfToExtendReferenceSchemas();
 });
 
